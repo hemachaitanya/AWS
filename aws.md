@@ -1,0 +1,55 @@
+        database:
+--------------------------
+        to store the data
+    1)file:  its strore the data is retrive , draw back of this file is we can't work with multiple users on same XL sheet(same file)  at a time .
+    2) database) data base is a collection of information 
+        DBMS: (data base management system) dbms are softwares/ engines which allows multiple users to parellely work on same data either it read/write(read: select , write: creaate/update/insert the data)
+
+type of database:
+![images](./aws1.png)
+    1)relational database: 
+![images](./aws2.png)
+* Relational Database are concept of Databases , we are design the data in terms of tables with rows and columes . the structure of the table is called as schema .
+    each row repracend a record
+    tables will maintaine unique structure
+ relational db does not depends on the horizantal scalling because  application will split into microlithic process (Ex: book ticket it stores one server but our payment process stores in another because of load will be increases extra server will takes by using horizantal scalling )
+ * vertical scalling is designed for relational db (it's designed for the read/write operations in single server , if we have too many  work loads we can increase the size of the server )
+
+popular languages  of db engines
+    * ms SQL db
+    * Oracle
+    * my SQL
+    * maria db
+    * postgre SQL
+    * DB2
+
+* db are used from application code aswell as db client s/w deal with data 
+![images](./aws3.png)
+SCALLiNG: majority of the application read more data then write(in this we have 2 servers one is master(write) , one is read . if incase we have too many read servers we can use)
+![image](./aws4.png)
+
+
+ADMINISTRATION: 
+     to installing or patching or configuring 
+        os
+        dbms
+    user management
+    connection management
+    backups and recovery
+    performence tuning
+    replications
+
+2) NO SQL db: it has semi structure information .it is designed to support inbuild horizantal scalling . it does not imposed strict schemas(ex: fb, whats up msgs)
+
+    types of no sql db
+
+![images](./aws5.png)
+
+dynamodb: lot of write papers which is push to the databa 
+    it's support horizantal scalling content will not stores directly
+in  horizantal scalling we have bidirectional 'replications' same way in vertical scalling we have one directional replications.
+
+
+
+
+
