@@ -49,6 +49,26 @@ dynamodb: lot of write papers which is push to the databa
     it's support horizantal scalling content will not stores directly
 in  horizantal scalling we have bidirectional 'replications' same way in vertical scalling we have one directional replications.
 
+ON-PREMISES:
+
+installing data in yor organizations/ server databases are generally servers which are connect from client in 3 popular ways
+    1. command line
+    2. GUI
+    3. code (sdk)
+ssms: sequel server management studio
+
+db could not take extraspace when cpu and ram requires so we download SQL server then it creates service and backups with in 20min.
+
+these server have more feautures and cost also high
+* for database two componets are effected
+    1. google(bigtable)
+    2. amazon ( dynamodb ): open source application refactoring mysql, postgres are less cost, aurora
+                            mango db
+                            (aws)document dab
+                            java
+                              corratto
+
+
 
 
 
