@@ -53,7 +53,7 @@ ON-PREMISES:
 
 installing data in yor organizations/ server databases are generally servers which are connect from client in 3 popular ways
     1. command line
-    2. GUI
+    2. GUI (grafical user interface)
     3. code (sdk)
 ssms: sequel server management studio
 
@@ -67,6 +67,7 @@ these server have more feautures and cost also high
                             (aws)document dab
                             java
                               corratto
+* 
 
 
 
