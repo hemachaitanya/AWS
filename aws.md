@@ -69,7 +69,46 @@ these server have more feautures and cost also high
                               corratto
 * 
 
+### LOAD BALANCER
 
+* * proxy serveer:
+ 
+	filter out all the out bound network traffic(one service between clinet and application)
+* revese proxy: 
+
+filter out all the incomming traffic to the application
+
+*** clint same its try to send traffic to same server(sticky section)
+
+* loadbalancer:(to ensure request is forworded only the servers which are responding)
+    (1)layer 4: ip,protocal, port
+	
+	(2)layer7:http, protocal,ip,sessions, sg(it's the little bit slow than layer -4)
+	
+* loadbalancer: 
+		1. classic load balancers(4&7 layer lb ):  
+		2.net-work lb: 4 layer(public dns present its have dns value)
+		
+		3. application lb: 7 layer (/order)
+		
+		4. gateway lb:
+		route 53 is DNS as a service when ever giving to a own  organaization names 
+		
+		
+		advanced details:
+#### for clients we can't give this type of urls so
+ * route 53 -- hosted zone --godaddy and chanch name server(it will take 24 hours)
+ * local entries and create host file(we can't purchase  domain)
+
+ ![hema](./Images/10.png)
+
+* first we create web ec2 , order ec2 and admin ec2
+* and working of loadbalancer is depends on
+		path
+        headers
+        ips
+        delete loadbalancers: listeners , admin, lb
+        
 
 
 

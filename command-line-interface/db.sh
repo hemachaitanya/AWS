@@ -13,6 +13,13 @@ NAME="walnts"
 aws s3api create-bucket \
     --bucket "$NAME"
 
+if [ $NAME!="walnts" ]
+then
+    create=$(aws s3api create-bucket \
+    --bucket "$NAME")
+    echo "bucket has created $create
+fi
+
 ##      aws s3 rb s3://prappaya
 * (OUTPUT) remove_bucket: prappaya
 
