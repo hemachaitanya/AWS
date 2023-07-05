@@ -111,5 +111,53 @@ filter out all the incomming traffic to the application
         
 
 
+#### approches to run applications are 3
+
+    (1) IAAS: we choose hardware configuration , OS and install platform , deploy application
+    (2)  PAAS: in this we choose  virtual hardware ,OS, deploy and 
+    (3) JiRA(SAAS):  we responsible only 
+    (4) server less: we will be charge only how many persons request to use (LAMDA)
+    (5) batch processing system: it's uses loads of servers in one day(for offer time)
+### Diffent hosting options
+
+#### hyperviser: 
+    * on physical server we install hyperviser and it have vertual box , these vertual box is used to create no. of instances.
+
+#### web hosting: 
+    * single- tenant
+    * multi- tenant
+#### CoLO( co-Location):
+     servers are ours but maintaines for another company
+#### Rack space()
+
+    * 
+#### lamda 
+![hema](./Images/benstack.png)
+![hema](./Images/lamda 2.png)
+
+##### aws bills for use services
+
+* what should  i do and when should i use these options 
+
+    (1) ad hoc customers: on-demand(no commitments hourly blling)
+
+    (2) regular customers: reserve instances(1 year  or 3 year contracts (30-50%)) 
+
+    (3) spot instance: 
+    making revenue out of free hardware , we get the ec2 instance at lowest possible cost , butmwhen the cost increases the ec2 instance will be evicted fro you (most discounts based on demand )
+
+### AMI (amazon machine image)
+
+*  how to install os on your lap?
+*       download software , install and configure
+
+   * AMI is an packaging format ec2 instances which containes OS , necessary softwares 
+   * AMI's are of 2 types of pricing 
+   marketpalce AMIs 
+        * you will have paid AMIs as well
+            1. BYO
+
+
+
 
 
