@@ -159,5 +159,36 @@ filter out all the incomming traffic to the application
 
 
 
+### aws atoscalling
+
+![hema](./Images/asg.1.png)
+![hema](./Images/asg2.png)
+![hema](./Images/asg3.png)
+![hema](./Images/asg-4.png)
+
+* min no.of instances
+* max no.of instances
+* scalling rules
+* we use existing launch template
+  * IN ASG , they have desired count 
+  * ASG are used in two cass 
+    * always
+    * cpu (htop)
+      we will used "stress " its automatically increase cpu
+    * ram
+    * i/o
+    * 
+    (1) horizantal auto scalling (scalling out and scalling in)
+    (2) vertical auto scalling
+
+### launch templete
+    why we choose more times then we create most frequently used templete's
+
+![hema](./Images/launch-temp.png)
+![hema](./Images/launch-temp1.png)
+![hema](./Images/launch-temp2.png)
+![hema](./Images/launch-temp3.png)
+
+
 
 
