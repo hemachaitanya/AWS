@@ -6,9 +6,9 @@
         DBMS: (data base management system) dbms are softwares/ engines which allows multiple users to parellely work on same data either it read/write(read: select , write: creaate/update/insert the data)
 
 type of database:
-![images](./aws1.png)
+![images](./Images/aws1.png)
     1)relational database: 
-![images](./aws2.png)
+![images](./Images/aws2.png)
 * Relational Database are concept of Databases , we are design the data in terms of tables with rows and columes . the structure of the table is called as schema .
     each row repracend a record
     tables will maintaine unique structure
@@ -166,12 +166,21 @@ filter out all the incomming traffic to the application
 ![hema](./Images/asg3.png)
 ![hema](./Images/asg-4.png)
 
-* min no.of instances
+* min no.of 
+* desired no.of instances
 * max no.of instances
 * scalling rules
+#### scallings are 2 types :
+#### 1* dynamic scalling
+
+    1. steps scalling (cpu utolization is >=75% : (you will be controle)when to increas and when to dicreasing)
+    2. target scalling (in your application where it works (it's not in our controle) )
+    3. simple scalling
+(predictive scalling policies: ) 
+(sheduler:you know that perticular time to increase and decrease instances)
 * we use existing launch template
   * IN ASG , they have desired count 
-  * ASG are used in two cass 
+  * ASG are used in two cases 
     * always
     * cpu (htop)
       we will used "stress " its automatically increase cpu
@@ -179,7 +188,7 @@ filter out all the incomming traffic to the application
     * i/o
     * 
     (1) horizantal auto scalling (scalling out and scalling in)
-    (2) vertical auto scalling
+    (2) vertical auto scalling (scalling up and scalling down)
 
 ### launch templete
     why we choose more times then we create most frequently used templete's
@@ -188,6 +197,8 @@ filter out all the incomming traffic to the application
 ![hema](./Images/launch-temp1.png)
 ![hema](./Images/launch-temp2.png)
 ![hema](./Images/launch-temp3.png)
+
+### 
 
 
 
