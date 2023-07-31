@@ -1,0 +1,45 @@
+### give all permissions to s3 bucket
+{
+    "Version": "2012-10-17",
+    "Statement":[
+        {
+             "Effect" : "Allow",
+             "Actions" : "*",
+             "Resource" : "arn:aws:s3:::kfcbucketchicken123"
+        }
+    ]
+}
+
+### give permissions allow the user to do any thing in s3 bucket but not delete them
+
+{
+    "version" : "2012-10-17",
+    "statement" : [
+        {
+
+        "effect": "allow",
+        "actions" : "s3:*",
+        "resource" : "*"
+    },
+    {
+        "effect" : "deny" ,
+        "actions": "s3:delete",
+        "resorce" : "*"
+    }
+    ]
+}
+
+## create one policy to give permissions are supposed to be given on one bucket
+{
+    "version": "2012-10-12",
+    "statement":[
+        {
+            "effect": "Allow",
+            "actions": [
+                "s3:Get*",
+                "s3:List*",
+                "s3-object-lambda:Get*"
+            ]
+        }
+    ]
+}

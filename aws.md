@@ -198,8 +198,30 @@ filter out all the incomming traffic to the application
 ![hema](./Images/launch-temp2.png)
 ![hema](./Images/launch-temp3.png)
 
-### 
+###  elastic beanstack
+no need to install ec2 instance and running commands we use elastc bean stack
+   it's looks like paas
+   it has 2 environments 
+    1. web server environment: 
+    2. worker environment: runs in back ground 
+### platform: 
+    * platform is nothing bt combination of OS + web/app server
 
+## create elastic beamstack 
+ * create elastic beam stack
+ ![hema](./Images/EBS-1.png)
+ ![hema](./Images/EBS_2.png)
+ ![hema](./Images/EBS-3.png)
+ ![hema](/Images/EBS-4.png)
+ ![hema](./Images/EBS-5.png)
+ * create one IAM user
+ * install awsebcli on windows and aws cofigure
+ 
+ ### blue feild and green feild
+
+
+
+ ### 
 
 
 
