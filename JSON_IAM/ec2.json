@@ -22,12 +22,12 @@
         {
             "Effect": "Allow",
             "Actions": "*",
-            "Resource":"ec2:*" 
+            "Resource":"*" 
         },
         {
             "Effect": "Deny",
             "Actions": "ec2:TerminateInstances",
-            "Resource":"ec2:*"    
+            "Resource":"*"    
         }
         
     ]
