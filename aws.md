@@ -221,10 +221,11 @@ no need to install ec2 instance and running commands we use elastc bean stack
 
 
 
- ### 
-### aws storage
+ ###
 
-#### blob storage
+## aws storage
+
+### blob storage
 
 * blob storage or object storage , this is  a storage system for file .
 * in terms of cloud blob storage allows us to uploads any file and access these ovver https.
@@ -240,14 +241,14 @@ no need to install ec2 instance and running commands we use elastc bean stack
 
      [1] storage cost
      [2] access cost
-     
+
 #### [1] storage classes
-    * standered
+    * standered(for maximum users we prefered standered access)
 
        high storage-cost
        low access-cost
 
-    * infrequent access
+    * infrequent access(for minimum users we prefered )
 
        low storage-cost
        high access-cost
