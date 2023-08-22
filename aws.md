@@ -249,16 +249,21 @@ no need to install ec2 instance and running commands we use elastc bean stack
        low storage-cost
        high access-cost
 
-    * Glacier
+    * Glacier(bank locker)
 
          no access cost
          low storage cost
 
-#### * Redendancy & durability for every storage class
+#### * Redendancy(availability) & durability for every storage class
 
 * multiple copies of the data are stored in different availabity zones [AZ's]is called redendancy.
 
-* 
+### how data in s3 is organized
+* s3 has buckets. each bucket will have a web (https) url , so ni 2 buckets can't have same name .
+* each bucket we can have 
+    * folder
+        * this is logical container which can have other folders or objects . 
+    * object : this reprasents a file .
  
 
 
