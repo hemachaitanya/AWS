@@ -240,9 +240,23 @@ no need to install ec2 instance and running commands we use elastc bean stack
      [2] access cost
 #### [1] storage classes
     * standered
+
+       high storage-cost
+       low access-cost
+
     * infrequent access
+
+       low storage-cost
+       high access-cost
+
     * Glacier
-#### Redundancy
+
+         no access cost
+         low storage cost
+
+#### * Redendancy & durability for every storage class
+
+* multiple copies of the data are stored in different availabity zones [AZ's]is called redendancy.
 
 * 
  
