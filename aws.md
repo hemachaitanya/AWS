@@ -235,9 +235,12 @@ no need to install ec2 instance and running commands we use elastc bean stack
 
 * as a user s3 is an unlimited storage space. with restictions and no-resttrictions on any no.of files which you can add.
 * there is one restrection: individual file size can't grater than this
+
 * s3 has 2 dimentional pricing
+
      [1] storage cost
      [2] access cost
+     
 #### [1] storage classes
     * standered
 
