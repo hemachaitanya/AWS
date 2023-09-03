@@ -268,6 +268,35 @@ no need to install ec2 instance and running commands we use elastc bean stack
     * folder
         * this is logical container which can have other folders or objects . 
     * object : this reprasents a file .
+
+### aws volume mount to ec2 instance 
+
+* create one ec2 instance in one available zone 
+* create one volume in the same availability reagion
+* connect ec2 instance and run
+```
+lsblk
+dh -h
+
+```
+* attach the ec2 instance to the  volumes and check below command
+```
+lsblk
+```
+* mount the volume in 
+```
+sudo mkdir /<folder name>
+sudo mkfs /dev/xvdf
+sudo mount /dev/xvdf /<folder-name>
+sudo fdisk /dev/xvdf
+    enter m
+          n= add the new partitian
+          p= print the partion table
+          w= write table to disk and exit
+lsblk
+
+```
+
  
 
 
