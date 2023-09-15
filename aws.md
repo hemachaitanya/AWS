@@ -29,6 +29,34 @@ SCALLiNG: majority of the application read more data then write(in this we have 
 ![image](./aws4.png)
 
 
+### BACKUP
+let's enable no backups setup
+
+* manual backup
+
+* 
+
+* restore snapshot
+
+* copy snapshots (other region)
+
+* sharing snapshot( its copy one aws a/c to another aws a/c)
+
+* valut is a storage 
+
+#### differential backup
+
+#### 
+
+we want time based backup is called ""
+
+#### replicas 
+
+* what ever the databases are changes replicas do the changes in backups also
+
+ 
+
+
 ADMINISTRATION: 
      to installing or patching or configuring 
         os
@@ -297,7 +325,7 @@ lsblk
 
 ```
 
- 
+
 
 
 
