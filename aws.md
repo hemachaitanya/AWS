@@ -77,6 +77,108 @@ dynamodb: lot of write papers which is push to the databa
     it's support horizantal scalling content will not stores directly
 in  horizantal scalling we have bidirectional 'replications' same way in vertical scalling we have one directional replications.
 
+
+### mysql data bases
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'hema@203';
+
+        CREATE DATABASE HH;
+
+        USE HH;
+
+
+        show databases;
+
+        CREATE TABLE `databasename`.`tablename` (_id int not null,LastName varchar(255) NOT NULL, FirstName varchar(255),Age int,PRIMARY KEY (_id));
+
+        desc <table-name>;
+
+        alter table <tablename> add phonenumber int not null;
+        alter table <tablename> modify phonenumber varchar(255);
+
+        alter table <tablename> rename column _id to eid;
+
+        truncate table <table name>
+
+
+
+## syntax to get back to the table when you drop the table data
+    
+    * first we create the backup file for every data bases after we delete data it will stores inside the data bases
+
+        mysqldump -u <username> -p <database name> > <backupFile name>
+
+        mysql -u <user> -p
+
+        drop table <tablename>;
+
+    * goto the back up file it data will be stored
+
+
+![dumb](./Images/dumpdata.png)
+
+
+	flashback table <table name> to before drop;
+
+	SHOW VARIABLES LIKE 'datadir';
+
+	SHOW VARIABLES LIKE 'log_bin';
+
+
+	SHOW BINARY LOGS;
+
+
+
+
+### automatically insert the data into one table changes into another table
+
+
+	CREATE TRIGGER insert_trigger
+	AFTER INSERT ON source_table
+	FOR EACH ROW
+	INSERT INTO destination_table
+	SELECT * FROM source_table;
+
+![database](./Images/triggerchanges.png)
+
+
+
+
+
+### we cannot change more than one column 
+
+        alter table <old table name> rename to <new table name>;
+
+        alter table chaitu drop column <colun name>;
+ 
+ 
+
+
+
+        CREATE TABLE `employee`.`employee` (emp_id int not null,first_name varchar(255) NOT NULL,lastname varchar(255) NOT NULL,pri_skill varchar(255
+        ),location varchar(255));
+
+
+        INSERT INTO 'HH'.'Hemalatha' (_id, LastName,FirstName) values ('203','Bijjam','hemalatha')
+
+        INSERT INTO Hemalatha (_id,LastName,FirstName )VALUES ('3', 'maneee', 'm');
+
+        INSERT INTO Hemalatha (_id,LastName,FirstName,age )VALUES ('333', 'eshu', 'll','29');
+
+        SELECT * FROM Hemalatha;
+        SELECT Age FROM Hemalatha;
+        DELETE FROM Hemalatha WHERE Age=29;
+        UPDATE RRR SET mobile=
+        ALTER TABLE RRR MODIFY mobile varchar(256);
+
+
+INSERT INTO RRR (mobile ,employee, address )VALUES ('99','babool','varangal');
+
+select * from Hemalatha, RRR;
+
+select _id as pid, LastName, null as cid, null as employee from Hemalatha union select null as mobile, null as , id as cid, name from cusMODIFY
+
+
 ON-PREMISES:
 
 installing data in yor organizations/ server databases are generally servers which are connect from client in 3 popular ways
