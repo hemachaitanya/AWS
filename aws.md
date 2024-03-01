@@ -178,6 +178,76 @@ select * from Hemalatha, RRR;
 
 select _id as pid, LastName, null as cid, null as employee from Hemalatha union select null as mobile, null as , id as cid, name from cusMODIFY
 
+## DATA MANIPULATION LANGUAGE (DDL){SUDI}
+
+### INSERT
+
+    (1) explicity method
+        
+        insert into <table name> values(value1,value2,....value n);
+
+    (2)implicite
+
+        insert into <table name> (column1 datatype(size),column2 datatype(size),....column n datatype(size)) ;
+
+### UPDATE
+     
+        update <table name> set col1=value1, col2=value2, .... ,col n=value n;
+
+### DELETE
+
+        delete * from <table name>;
+
+        delete <column> from <tablename>;
+### SELECT
+
+
+        select * from <table name>;
+
+        select <column> from <table name>;
+### alias
+
+        1. column level alias
+
+            *  select col1 as "aliasname", col2 as "aliasname",....., coln as "aliasname" from <tablename>;
+
+        2. table level alias
+
+           
+
+        3. expression level alias
+
+             * select col1 aliasname, col2 aliasname,....., coln aliasname from <tablename>;
+
+### using select command we can retrive the data in 3 ways 
+
+#### (1) projection 
+        retrive the data from specific columns
+
+        select col1,col2,...,coln from <table name>;
+
+#### (2) selection
+        retrive the data from some conditonsvin table
+
+        select * from <tablename> where <condition>
+
+#### (3) join
+
+        select * from <table1>,<table2>,...<table n>;
+
+        
+         
+
+
+
+
+
+
+
+
+        
+
+
 
 ON-PREMISES:
 
