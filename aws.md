@@ -40,11 +40,12 @@ popular languages  of db engines
     * DB2
 
 * db are used from application code aswell as db client s/w deal with data 
-![images](./aws3.png)
+
+![hema](./Images/aws3.png)
 
 SCALLiNG: majority of the application read more data then write(in this we have 2 servers one is master(write) , one is read . if incase we have too many read servers we can use)
 
-![image](./aws4.png)
+![image](./Images/aws4.png)
 
 
 ### BACKUP
@@ -98,7 +99,7 @@ ADMINISTRATION:
 
     types of no sql db
 
-![images](./aws5.png)
+![images](./Images/aws5.png)
 
 dynamodb: lot of write papers which is push to the databa 
 
@@ -122,7 +123,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'hema@203';
         desc <table-name>;
 
         alter table <tablename> add phonenumber int not null;
-        
+
         alter table <tablename> modify phonenumber varchar(255);
 
         alter table <tablename> rename column _id to eid;
