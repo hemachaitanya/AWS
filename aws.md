@@ -2,34 +2,53 @@
 --------------------------
         to store the data
     1)file:  its strore the data is retrive , draw back of this file is we can't work with multiple users on same XL sheet(same file)  at a time .
-    2) database) data base is a collection of information 
+
+    2) database: data base is a collection of information 
+
         DBMS: (data base management system) dbms are softwares/ engines which allows multiple users to parellely work on same data either it read/write(read: select , write: creaate/update/insert the data)
 
 type of database:
+
 ![images](./Images/aws1.png)
+
     1)relational database: 
+
 ![images](./Images/aws2.png)
+
 * Relational Database are concept of Databases , we are design the data in terms of tables with rows and columes . the structure of the table is called as schema .
+
     each row repracend a record
+
     tables will maintaine unique structure
+
  relational db does not depends on the horizantal scalling because  application will split into microlithic process (Ex: book ticket it stores one server but our payment process stores in another because of load will be increases extra server will takes by using horizantal scalling )
+
  * vertical scalling is designed for relational db (it's designed for the read/write operations in single server , if we have too many  work loads we can increase the size of the server )
 
 popular languages  of db engines
+
     * ms SQL db
+
     * Oracle
+
     * my SQL
+
     * maria db
+
     * postgre SQL
+
     * DB2
 
 * db are used from application code aswell as db client s/w deal with data 
 ![images](./aws3.png)
+
 SCALLiNG: majority of the application read more data then write(in this we have 2 servers one is master(write) , one is read . if incase we have too many read servers we can use)
+
 ![image](./aws4.png)
 
 
 ### BACKUP
+
 let's enable no backups setup
 
 * manual backup
@@ -58,13 +77,21 @@ we want time based backup is called ""
 
 
 ADMINISTRATION: 
+
      to installing or patching or configuring 
+
         os
+
         dbms
+
     user management
+    
     connection management
+    
     backups and recovery
+    
     performence tuning
+    
     replications
 
 2) NO SQL db: it has semi structure information .it is designed to support inbuild horizantal scalling . it does not imposed strict schemas(ex: fb, whats up msgs)
@@ -74,6 +101,7 @@ ADMINISTRATION:
 ![images](./aws5.png)
 
 dynamodb: lot of write papers which is push to the databa 
+
     it's support horizantal scalling content will not stores directly
 in  horizantal scalling we have bidirectional 'replications' same way in vertical scalling we have one directional replications.
 
@@ -94,6 +122,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'hema@203';
         desc <table-name>;
 
         alter table <tablename> add phonenumber int not null;
+        
         alter table <tablename> modify phonenumber varchar(255);
 
         alter table <tablename> rename column _id to eid;
@@ -463,6 +492,7 @@ no need to install ec2 instance and running commands we use elastc bean stack
 * multiple copies of the data are stored in different availabity zones [AZ's]is called redendancy.
 
 ### how data in s3 is organized
+
 * s3 has buckets. each bucket will have a web (https) url , so ni 2 buckets can't have same name .
 * each bucket we can have 
     * folder
