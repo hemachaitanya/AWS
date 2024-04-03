@@ -282,20 +282,33 @@ select _id as pid, LastName, null as cid, null as employee from Hemalatha union 
 ON-PREMISES:
 
 installing data in yor organizations/ server databases are generally servers which are connect from client in 3 popular ways
+
     1. command line
+
     2. GUI (grafical user interface)
+
     3. code (sdk)
+
 ssms: sequel server management studio
 
 db could not take extraspace when cpu and ram requires so we download SQL server then it creates service and backups with in 20min.
 
 these server have more feautures and cost also high
+
 * for database two componets are effected
     1. google(bigtable)
-    2. amazon ( dynamodb ): open source application refactoring mysql, postgres are less cost, aurora
+
+    2. amazon ( dynamodb ): 
+    open source application refactoring mysql, postgres are less cost, 
+                            
+                            aurora
+                            
                             mango db
+                            
                             (aws)document dab
+                            
                             java
+                            
                               corratto
 * 
 
@@ -304,6 +317,7 @@ these server have more feautures and cost also high
 * * proxy serveer:
  
 	filter out all the out bound network traffic(one service between clinet and application)
+
 * revese proxy: 
 
 filter out all the incomming traffic to the application
@@ -311,32 +325,44 @@ filter out all the incomming traffic to the application
 *** clint same its try to send traffic to same server(sticky section)
 
 * loadbalancer:(to ensure request is forworded only the servers which are responding)
+
     (1)layer 4: ip,protocal, port
 	
 	(2)layer7:http, protocal,ip,sessions, sg(it's the little bit slow than layer -4)
 	
 * loadbalancer: 
-		1. classic load balancers(4&7 layer lb ):  
+
+		1. classic load balancers(4&7 layer lb ):
+
 		2.net-work lb: 4 layer(public dns present its have dns value)
 		
 		3. application lb: 7 layer (/order)
 		
 		4. gateway lb:
+
 		route 53 is DNS as a service when ever giving to a own  organaization names 
 		
 		
 		advanced details:
+
 #### for clients we can't give this type of urls so
+
  * route 53 -- hosted zone --godaddy and chanch name server(it will take 24 hours)
+
  * local entries and create host file(we can't purchase  domain)
 
- ![hema](./Images/10.png)
+![hema](./Images/10.png)
 
 * first we create web ec2 , order ec2 and admin ec2
+
 * and working of loadbalancer is depends on
-		path
+		
+        path
+        
         headers
+        
         ips
+        
         delete loadbalancers: listeners , admin, lb
         
 
@@ -344,25 +370,39 @@ filter out all the incomming traffic to the application
 #### approches to run applications are 3
 
     (1) IAAS: we choose hardware configuration , OS and install platform , deploy application
+
     (2)  PAAS: in this we choose  virtual hardware ,OS, deploy and 
+    
     (3) JiRA(SAAS):  we responsible only 
+    
     (4) server less: we will be charge only how many persons request to use (LAMDA)
+    
     (5) batch processing system: it's uses loads of servers in one day(for offer time)
+
 ### Diffent hosting options
 
-#### hyperviser: 
+#### hyperviser:
+
     * on physical server we install hyperviser and it have vertual box , these vertual box is used to create no. of instances.
 
 #### web hosting: 
+
+
     * single- tenant
+
     * multi- tenant
+
 #### CoLO( co-Location):
+
      servers are ours but maintaines for another company
+
 #### Rack space()
 
     * 
-#### lamda 
+#### lamda
+
 ![hema](./Images/benstack.png)
+
 ![hema](./Images/lamda 2.png)
 
 ##### aws bills for use services
