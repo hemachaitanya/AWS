@@ -432,8 +432,11 @@ filter out all the incomming traffic to the application
 ### aws atoscalling
 
 ![hema](./Images/asg.1.png)
+
 ![hema](./Images/asg2.png)
+
 ![hema](./Images/asg3.png)
+
 ![hema](./Images/asg-4.png)
 
 * min no.of 
@@ -464,8 +467,11 @@ filter out all the incomming traffic to the application
     why we choose more times then we create most frequently used templete's
 
 ![hema](./Images/launch-temp.png)
+
 ![hema](./Images/launch-temp1.png)
+
 ![hema](./Images/launch-temp2.png)
+
 ![hema](./Images/launch-temp3.png)
 
 ###  elastic beanstack
@@ -479,11 +485,17 @@ no need to install ec2 instance and running commands we use elastc bean stack
 
 ## create elastic beamstack 
  * create elastic beam stack
- ![hema](./Images/EBS-1.png)
- ![hema](./Images/EBS_2.png)
- ![hema](./Images/EBS-3.png)
- ![hema](/Images/EBS-4.png)
- ![hema](./Images/EBS-5.png)
+ * 
+![hema](./Images/EBS-1.png)
+
+![hema](./Images/EBS_2.png)
+
+![hema](./Images/EBS-3.png)
+
+![hema](/Images/EBS-4.png)
+ 
+![hema](./Images/EBS-5.png)
+
  * create one IAM user
  * install awsebcli on windows and aws cofigure
  
