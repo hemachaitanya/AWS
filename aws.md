@@ -504,6 +504,108 @@ no need to install ec2 instance and running commands we use elastc bean stack
 
 #### s3 storage:
 
+types of s3 bucket
+
+1. Standard Bucket: 
+
+General-purpose bucket for storing frequently accessed data.
+
+2. Infrequent Access (IA) Bucket: 
+
+For storing less frequently accessed data, with lower storage costs.
+
+3. Reduced Redundancy Storage (RRS) Bucket: 
+
+For storing non-critical data, with lower storage costs.
+
+4. Glacier Bucket: 
+
+For long-term data archiving and backup. storage cost is low , access latancy is high
+
+5. Intelligent-Tiering Bucket: Automatically moves data to most cost-effective tier.
+
+##### s3 security
+
+when we create the file , these file will move to DATACENTERS then file will be encrypted the perticular file
+
+ ### 1. s3 -SSE
+ 
+  (serverside encription)
+
+ ###### SSE-S3
+ 
+ (we apply once SSE then cloud creates automatically another key will be provided this key stored in data centers , We cannot manage and change the key , it managed by cloud)
+
+   ###### SSE-KMS 
+   
+   (We create key When we asks then only cloudcreates the key. we can manage the key like create , delete or modify... )
+
+   ###### SSE-CMK 
+
+   here key also created by the customer , full management in the key will be have costomer side encryption
+
+#### 2. Access permissions
+
+    for example we can create one bucket in one region , this bucket containes files , this files are accessed by other users or not by using ACLS
+
+    2a . private access :
+    
+     perticularly some users access the file we use privater access
+
+    2b. public access :
+
+    huge amount of members access the file we prefer the piblic acess
+
+  ##### bucket polacy:
+
+  * it will in json formate 
+
+  * bucket access from one a/c to another a/c
+
+  ```json
+{
+    "version": "2012-10-17",
+    "statement": (which permissions givern to the bucket )
+    {
+        "effect": (block or unblock means allow or deny)
+        "action": (create , delete, which staoragecalss data will be placed , download data (get),,....) 
+        "principal": (evariki ee access estiunnam ani (a/c no:))
+        "resource":b (bucket ,ec2, iam .....)
+    }
+}
+```
+
+ * in case we give the permissons by bucket (inside the 1000 objects provide public access)
+
+#### Object ACL :
+   perticular object access the perticular user a/c in one bucket
+
+  read (canonical id)
+
+  write
+
+  full
+
+  * in some users we want to  give permissions on perticularobjects
+
+  #### presign URLS: 
+
+
+  * for security purpose we give the access permissions in perticular time only ... ex: bank applications 
+
+ * presign URL work on Object level : we give the access perticular time for perticular user
+
+ <objecturl>?<querystring means time>
+
+ * we cannot do this on console
+
+
+
+
+  
+
+
+
 * as a user s3 is an unlimited storage space. with restictions and no-resttrictions on any no.of files which you can add.
 * there is one restrection: individual file size can't grater than this
 
