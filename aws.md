@@ -708,21 +708,78 @@ lsblk
 * we can store multiple  servers stores in  diff. storages .
 
 
+* file organization
+
+* metadata
+
+    * when file created , who will create file , which purpouse it will be createsd , what is the file permissions and policies
+
+
 #### 1. EFS
+
+* top to bottom  folder hirearchive
+
+* we give the full path 
+
+* when we create  inside folder it stores  one single component  , file cannot split
+
+* metadate: time and permissions only
+
+* ADVANTAGE:
+
+    * multy systems  read and write at a time.
+
+    * different servers attached to file  level storage   
+
+* DRAWBACK:
+
+    * efficiency is decreases
+    * latency is high becase we access the file one folder to other folder....(ex: /root/etc/log/log.txt)
+
+
+    EFS(linux) , FSx (windows)
+
+    * we used nsf protocol for linux
+
+    * DAS & NAS supports
+ 
+
 
 ![heam](./Images/EFS.png)
 
-* upload file
+* upload file , how it will be stores , when we upload file any changes will done or after uploading the file any changes will be done 
 
 #### 2. Fsx : windows
+
+* we used SMB protocol for windows
 
 ![hema](./Images/FSx.png)
 
 #### 2. EBS
 
+* file divided into different parts of blocks , these block stores in different storage devices 
+
+* ADVANTAGE:
+
+    * WE HAVE MULTIPLE STORAGE DEVICES so all data will be gathered , IOPS cost will be decreases
+
+    * boot loader softwares installed very fast 
+
+    * data base operations will done in EBS in SAN
+
+    * previously one EBS attachesd to single Instance , now aws enhance these problem one EBS attached to multiple instances .
+
+*  metadata:  who upload ,  creation time , permissions , file formate
+
+
 ![hema](./Images/EBS-storage%20class.png)
 
 #### 3. OBJECT STORAGE
+
+
+* file divided into different parts of blocks , these block stores in containers , container stores in storage a/c 
+
+* metadata: file purpouse , time ,why this file creates , acl, policies , encript or decript , paras ....
 
 
 
