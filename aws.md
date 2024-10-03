@@ -574,7 +574,7 @@ when we create the file , these file will move to DATACENTERS then file will be 
 
   * bucket access from one a/c to another a/c
 
-  ```json
+```json
 {
     "version": "2012-10-17",
     "statement": (which permissions givern to the bucket )
@@ -681,6 +681,49 @@ sudo fdisk /dev/xvdf
 lsblk
 
 ```
+
+### storage classes
+
+* DAS (direct access storage like pin drive)
+
+![hema](./Images/DAS.png)
+
+* NAS (multiple vm's connect with LAN , storage also connected tha LAN )
+
+        so in this NAS cable efficiency decreases
+![hema](./Images/NAS.png)
+
+* SAN : (storage connected to the network cable , all machines are connected to the storage , the machines communicate with each other we connect those with another cable)
+
+* cable efficiency is high
+
+* multiple serverce read and write the data at a time
+
+* auto scalling is possible 
+
+![hema](./Images/SAN.png)
+
+* storage cost is increases  because network setup is increased .
+
+* we can store multiple  servers stores in  diff. storages .
+
+
+#### 1. EFS
+
+![heam](./Images/EFS.png)
+
+* upload file
+
+#### 2. Fsx : windows
+
+![hema](./Images/FSx.png)
+
+#### 2. EBS
+
+![hema](./Images/EBS-storage%20class.png)
+
+#### 3. OBJECT STORAGE
+
 
 
 
