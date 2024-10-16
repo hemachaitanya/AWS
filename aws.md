@@ -1,4 +1,106 @@
+### Here are some example logs from various AWS services:
 
+*CloudWatch Logs*
+
+- Log Group: /aws/lambda/my-function
+- Log Stream: 2023-02-20
+
+```
+{
+  "timestamp": 1643723400,
+  "logLevel": "INFO",
+  "message": "Function executed successfully"
+}
+{
+  "timestamp": 1643723401,
+  "logLevel": "ERROR",
+  "message": "Error processing request: invalid input"
+}
+```
+
+*EC2 System Logs*
+
+- Instance ID: i-0123456789abcdef0
+- Log Type: system
+
+```
+Feb 20 14:30:00 ip-10-0-1-100 systemd[1]: Started Application.
+Feb 20 14:30:01 ip-10-0-1-100 sshd[1234]: Accepted publickey for ec2-user from 192.168.1.100 port 1234 ssh2
+```
+
+*Lambda Logs*
+
+- Function Name: my-function
+- Log Type: execution
+
+```
+START RequestId: 1234567890 Version: $LATEST
+2023-02-20T14:30:00.000Z  INFO  Function executed successfully {}
+END RequestId: 1234567890
+REPORT RequestId: 1234567890  Duration: 100.00 ms  Billed Duration: 100 ms  Memory Size: 128 MB  Max Memory Used: 50 MB
+```
+
+*API Gateway Logs*
+
+- API ID: a123456789
+- Log Type: access
+
+```
+{
+  "requestId": "1234567890",
+  "ip": "192.168.1.100",
+  "requestTime": "2023-02-20T14:30:00.000Z",
+  "httpMethod": "GET",
+  "resourcePath": "/users",
+  "statusCode": 200,
+  "responseLength": 100
+}
+```
+
+*S3 Logs*
+
+- Bucket Name: my-bucket
+- Log Type: access
+
+```
+2023-02-20 14:30:00 192.168.1.100 - 1234567890 [20/Feb/2023:14:30:00 +0000] GET /users/1234567890 HTTP/1.1 200 - 100 - "-" "Mozilla/5.0"
+```
+
+*RDS Logs*
+
+- DB Instance ID: db-0123456789abcdef0
+- Log Type: error
+
+```
+2023-02-20 14:30:00 UTC [1234] ERROR:  relation "users" does not exist at character 15
+```
+
+*CloudTrail Logs*
+
+- Event Name: CreateBucket
+- Event Source: (link unavailable)
+
+```
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAM User",
+    "principalId": "AIDAIAZ4NPMW7C6Example"
+  },
+  "eventTime": "2023-02-20T14:30:00Z",
+  "eventName": "CreateBucket",
+  "resources": [
+    {
+      "ARN": "arn:aws:s3:::my-bucket",
+      "type": "AWS::S3::Bucket"
+    }
+  ]
+}
+```
+
+These logs provide valuable insights into the activities and performance of your AWS resources.
+
+Would you like more information or examples?
 ### *Networking*
 
 1. VPC (Virtual Private Cloud)
