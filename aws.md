@@ -1,3 +1,290 @@
+
+### *Networking*
+
+1. VPC (Virtual Private Cloud)
+    - Definition: Virtual network dedicated to AWS resources.
+
+    - Creation Steps:
+        - Log in to AWS Management Console.
+        - Navigate to VPC Dashboard.
+        - Click "Create VPC".
+        - Enter CIDR block (e.g., 10.0.0.0/16).
+        - Choose tenancy (default or dedicated).
+        - Click "Create VPC".
+    - Subtypes:
+        - Subnets (private, public)
+        - Route Tables
+        - Network ACLs
+        - Security Groups
+
+2. Subnet
+    - Definition: Subset of IP addresses within a VPC.
+    - Creation Steps:
+        - Navigate to VPC Dashboard.
+        - Click "Subnets" in the left menu.
+        - Click "Create subnet".
+        - Select VPC.
+        - Enter CIDR block (e.g., 10.0.1.0/24).
+        - Choose subnet type (private or public).
+        - Click "Create subnet".
+
+3. IGW (Internet Gateway)
+    - Definition: Enables communication between VPC and internet.
+    - Creation Steps:
+        - Navigate to VPC Dashboard.
+        - Click "Internet Gateways" in the left menu.
+        - Click "Create internet gateway".
+        - Attach IGW to VPC.
+        - Update route table to route traffic to IGW.
+
+*Compute*
+
+1. EC2 (Elastic Compute Cloud)
+    - Definition: Virtual servers for compute, storage, and networking.
+    - Creation Steps:
+        - Navigate to EC2 Dashboard.
+        - Click "Launch Instance".
+        - Choose AMI (Amazon Machine Image).
+        - Select instance type.
+        - Configure instance details (e.g., VPC, subnet, security group).
+        - Click "Launch".
+    - Subtypes:
+        - Instances
+        - AMIs
+        - Instance Store Volumes
+        - Elastic GPUs
+        - Spot Instances
+        - Reserved Instances
+        - Dedicated Hosts
+
+2. Lambda
+    - Definition: Serverless compute for event-driven applications.
+    - Creation Steps:
+        - Navigate to Lambda Dashboard.
+        - Click "Create function".
+        - Choose runtime (e.g., Node.js).
+        - Set handler function.
+        - Configure event trigger.
+        - Test function.
+
+*Storage*
+
+1. S3 (Simple Storage Service)
+    - Definition: Object storage for files and data.
+    - Creation Steps:
+        - Navigate to S3 Dashboard.
+        - Click "Create bucket".
+        - Enter bucket name.
+        - Choose region.
+        - Set bucket policy (optional).
+    - Subtypes:
+        - Buckets
+        - Objects
+        - Folders
+        - Versioning
+        - Lifecycle Configurations
+
+2. S3 Replica
+    - Definition: Copies data from one S3 bucket to another.
+    - Creation Steps:
+        - Navigate to S3 Dashboard.
+        - Click "Replication" in the left menu.
+        - Click "Create replication rule".
+        - Select source bucket.
+        - Select destination bucket.
+        - Configure replication settings.
+
+*Security*
+
+1. IAM (Identity and Access Management)
+    - Definition: Manages access and permissions for AWS resources.
+    - Creation Steps:
+        - Navigate to IAM Dashboard.
+        - Click "Users" in the left menu.
+        - Click "Create user".
+        - Set user details (e.g., username, password).
+        - Assign permissions.
+    - Subtypes:
+        - Users
+        - Groups
+        - Roles
+        - Policies
+
+2. KMS (Key Management Service)
+    - Definition: Manages encryption keys.
+    - Creation Steps:
+        - Navigate to KMS Dashboard.
+        - Click "Create key".
+        - Choose key type (symmetric or asymmetric).
+        - Set key policy.
+        - Use key for encryption.
+
+*Application Integration*
+
+1. ALB (Application Load Balancer)
+    - Definition: Distributes traffic to EC2 instances.
+    - Creation Steps:
+        - Navigate to EC2 Dashboard.
+        - Click "Load Balancers" in the left menu.
+        - Click "Create load balancer".
+        - Choose ALB.
+        - Configure listener settings.
+        - Add EC2 instances to target group.
+
+2. API Gateway
+    - Definition: RESTful API management.
+    - Creation Steps:
+        - Navigate to API Gateway Dashboard.
+        - Click "Create API".
+        - Choose API type (e.g., REST).
+        - Configure API settings.
+        - Deploy API.
+
+*Monitoring and Logging*
+
+1. CloudWatch
+    - Definition: Monitoring and logging for AWS resources.
+    - Creation Steps:
+        - Navigate to CloudWatch Dashboard.
+        - Click "Metrics" in the left menu
+[17/10, 12:24 am] Meta AI: Here's a comprehensive list of AWS resources, including definitions, creation steps, and example use cases:
+
+*Networking*
+
+1. VPC (Virtual Private Cloud)
+    - Definition: Virtual network dedicated to AWS resources.
+    - Creation Steps:
+        1. Log in to AWS Management Console.
+        2. Navigate to VPC Dashboard.
+        3. Click "Create VPC".
+        4. Enter CIDR block (e.g., 10.0.0.0/16).
+        5. Choose tenancy (default or dedicated).
+    - Use Cases: Network isolation, security.
+    - Subtypes:
+        - Subnets (private, public)
+        - Route Tables
+        - Network ACLs
+        - Security Groups
+
+2. Subnet
+    - Definition: Subset of IP addresses within a VPC.
+    - Creation Steps:
+        1. Navigate to VPC Dashboard.
+        2. Click "Subnets" in the left menu.
+        3. Click "Create subnet".
+        4. Select VPC.
+        5. Enter CIDR block (e.g., 10.0.1.0/24).
+    - Use Cases: Network segmentation.
+    - Subtypes:
+        - Private subnet
+        - Public subnet
+
+3. IGW (Internet Gateway)
+    - Definition: Enables communication between VPC and internet.
+    - Creation Steps:
+        1. Navigate to VPC Dashboard.
+        2. Click "Internet Gateways" in the left menu.
+        3. Click "Create internet gateway".
+        4. Attach IGW to VPC.
+    - Use Cases: Internet access.
+
+*Compute*
+
+1. EC2 (Elastic Compute Cloud)
+    - Definition: Virtual servers for compute, storage, and networking.
+    - Creation Steps:
+        1. Navigate to EC2 Dashboard.
+        2. Click "Launch Instance".
+        3. Choose AMI (Amazon Machine Image).
+        4. Select instance type.
+        5. Configure instance details.
+    - Use Cases: Web servers, databases.
+    - Subtypes:
+        - Instances
+        - AMIs
+        - Instance Store Volumes
+        - Elastic GPUs
+
+2. Lambda
+    - Definition: Serverless compute for event-driven applications.
+    - Creation Steps:
+        1. Navigate to Lambda Dashboard.
+        2. Click "Create function".
+        3. Choose runtime (e.g., Node.js).
+        4. Set handler function.
+        5. Configure event trigger.
+    - Use Cases: Real-time data processing.
+
+*Storage*
+
+1. S3 (Simple Storage Service)
+    - Definition: Object storage for files and data.
+    - Creation Steps:
+        1. Navigate to S3 Dashboard.
+        2. Click "Create bucket".
+        3. Enter bucket name.
+        4. Choose region.
+    - Use Cases: Static website hosting.
+    - Subtypes:
+        - Buckets
+        - Objects
+        - Folders
+        - Versioning
+        - Lifecycle Configurations
+
+2. S3 Replica
+    - Definition: Copies data from one S3 bucket to another.
+    - Creation Steps:
+        1. Navigate to S3 Dashboard.
+        2. Click "Replication" in the left menu.
+        3. Click "Create replication rule".
+        4. Select source bucket.
+        5. Select destination bucket.
+    - Use Cases: Data redundancy.
+
+*Security*
+
+1. IAM (Identity and Access Management)
+    - Definition: Manages access and permissions for AWS resources.
+    - Creation Steps:
+        1. Navigate to IAM Dashboard.
+        2. Click "Users" in the left menu.
+        3. Click "Create user".
+        4. Set user details.
+        5. Assign permissions.
+    - Use Cases: Access control.
+    - Subtypes:
+        - Users
+        - Groups
+        - Roles
+        - Policies
+
+2. KMS (Key Management Service)
+    - Definition: Manages encryption keys.
+    - Creation Steps:
+        1. Navigate to KMS Dashboard.
+        2. Click "Create key".
+        3. Choose key type.
+        4. Set key policy.
+    - Use Cases: Data encryption.
+
+*Application Integration*
+
+1. ALB (Application Load Balancer)
+    - Definition: Distributes traffic to EC2 instances.
+    - Creation Steps:
+        1. Navigate to EC2 Dashboard.
+        2. Click "Load Balancers" in the left menu.
+        3. Click "Create load balancer".
+        4. Choose ALB.
+        5. Configure listener settings.
+    - Use Cases: Load balancing.
+
+2. API Gateway
+    - Definition: RESTful API management.
+    - Creation Steps:
+        1. 
+
 As a DevOps engineer, I'll guide you through troubleshooting and resolving latency issues in your application.
 
 *Step 1
