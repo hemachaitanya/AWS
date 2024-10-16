@@ -15,11 +15,11 @@ As a DevOps engineer, I'll guide you through troubleshooting and resolving laten
 
 * sudo systremctl status (system is running or not)
 
-* ping -c 4 <ipv4> (check the network connectivity)
+* ping -c 4 ipv4 (check the network connectivity)
 
 * sudo iptables -n -L (check sg)
 
-* dig/host <domine name> (verify the dns)
+* dig/host domine name (verify the dns)
 
 * dig -x ipv4
   
