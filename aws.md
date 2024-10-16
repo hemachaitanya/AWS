@@ -11,7 +11,68 @@ As a DevOps engineer, I'll guide you through troubleshooting and resolving laten
 
 
 
+### initial checks 
 
+* sudo systremctl status (system is running or not)
+
+* ping -c 4 <ipv4> (check the network connectivity)
+
+* sudo iptables -n -L (check sg)
+
+* dig/host <domine name> (verify the dns)
+
+* dig -x ipv4
+  
+* host ipv4
+
+* nslookup ipv4
+
+* whois ipv4
+
+* ip addr show
+  ### latency issues
+
+  * top
+  * htop
+  * mpstat -p all (to check the cpu utilizations)
+ 
+  * vmstat
+  * free -m (check the memory)
+  * watch -n |free -m
+ 
+  * df -h
+  * dust
+  * du -sh (to check the disk space )
+ 
+  * netstat -an
+  * tcpdump -i any -n -vv -s 0 -c 100 (to find network traffic)
+ 
+    ### accesability issues
+
+    * sudo iptables -n -L (check firewall rules)
+   
+    * sudo ufw status
+   
+    ### check port availability
+
+    * netstat -tlnp | grep port-number
+   
+    * telnet instance-ip port-number
+   
+    ### ssl / tls configuration
+
+    openssl s-client -connect ipv4: port
+
+  ### check application logs
+
+  * sudo journalctl -u app-service
+ 
+  * sudo grep error-msg /var/log/app.log
+ 
+  * mtr instance-ip (both routing and telnet)
+ 
+  * traceroute ipv4
+    
 ### Analyze logs for errors or slow queries:
     - `grep "slow query" /var/log/mysql/error.log` (MySQL)
     - `grep "timeout" /var/log/nginx/error.log` (Nginx)
