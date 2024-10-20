@@ -1,3 +1,31 @@
+### difference between SQS & SNS
+
+[LINK PROVIDES HERE](https://medium.com/awesome-cloud/aws-difference-between-sqs-and-sns-61a397bf76c5)
+
+### DIFFERENCE B/W APPLICATION , CLASSSIC AND NETWORK LOAD BALANCERS
+
+[LINK HERE](https://medium.com/awesome-cloud/aws-difference-between-application-load-balancer-and-network-load-balancer-cb8b6cd296a4)
+
+### DIFFFERENCE B/W SG & NACL
+
+[LINK HERE](https://medium.com/awesome-cloud/aws-difference-between-security-groups-and-network-acls-adc632ea29ae)
+
+### DIFFERENCE B/W  IGW & NAT
+
+[LINK HERE](https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and-nat-gateway-c9177e710af6)
+
+### DIFFERENCE B/W SECRETES & PARAMETER STORE
+
+[LINK HERE](https://medium.com/awesome-cloud/aws-difference-between-secrets-manager-and-parameter-store-systems-manager-f02686604eae)
+
+### DIFFERENCE B/W AMI & SNAPSHOT
+
+[LINK HERE](https://nidhiashtikar.medium.com/amazon-ami-vs-snapshot-5a17b74c7523)
+
+### DIFFERENCE BETEWEEN EKS & ECS
+
+[LINK  HERE](https://nidhiashtikar.medium.com/amazon-ami-vs-snapshot-5a17b74c7523)
+
 ### Here are some example logs from various AWS services:
 
 *CloudWatch Logs*
